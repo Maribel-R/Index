@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var aleatorio = Math.floor(Math.random() * 10) + 1;
+    let intentos = 0;
+    let num;
+    var acierto = false;
+    let dato;
+
+    for (let i =0; i <= 1; i++){
+        
+        var niv = prompt (" DATOS CURIOSOS \n INGRESE UN NIVEL \n 1. Nivel Facil \n 2. Nivel Medio \n 3. Nivel Intermedio \n 4. Nivel Dificil");
+        
+        switch (niv){
+            case "1":
+            alert ("Escogiste Nivel Facil");
+            while (acierto == false && intentos < 1){
+                let num = prompt ("INGRESA UN NUMERO ALEATORIO DEL 1 - 10 ");
+                intentos ++;
+                if (num == aleatorio){
+                    alert ("Felicidades, has acertado ");
+                    alert ("Un dato curioso jajaja \n Soy una persona que suele dormir por mucho tiempo 😴");
+                    acierto = true;
+                } else{
+                    alert ("Lo siento, no has acertado 😔");
+                }
+            }
+            break;
+            case "2":
+            alert ("Escogiste Nivel Medio");
+            while (acierto == false && intentos < 2){
+                let num = prompt ("INGRESA UN NUMERO ALEATORIO DEL 1 - 10 ");
+                intentos ++;
+                if (num == aleatorio){
+                    alert ("Felicidades, has acertado ");
+                    alert ("Un dato curioso jajaja \n Soy una persona muy enojona ");
+                    acierto = true;
+                } else{
+                    alert ("Lo siento, no has acertado 😔 \n Llevas " + intentos + " intentos.");
+                }
+
+                if (intentos == 2){
+                    alert ("Has perdido");
+                }
+            }
+            break;
+            case "3":
+            alert ("Escogiste Nivel Intermedio");
+            while (acierto == false && intentos < 3){
+                let num = prompt ("INGRESA UN NUMERO ALEATORIO DEL 1 - 10 ");
+                intentos ++;
+                if (num == aleatorio){
+                    alert ("Felicidades, has acertado ");
+                    alert ("Un dato curioso jajaja \n Soy una persona que le gustan las matematicas pero me estreso rapido");
+                    acierto = true;
+                } else{
+                    alert ("Lo siento, no has acertado 😔 \n Llevas " + intentos + " intentos.");
+                }
+
+                if (intentos == 3){
+                    alert ("Has perdido");
+                }
+            }
+            break;
+            case "4":
+            alert ("Escogiste Nivel Dificil");
+            while (acierto == false && intentos < 5){
+                let num = prompt ("INGRESA UN NUMERO ALEATORIO DEL 1 - 10 ");
+                intentos ++;
+                if (num == aleatorio){
+                    alert ("Felicidades, has acertado ");
+                    alert ("Un dato curioso jajaja \n Soy una persona muy dedicada y detallista \n me gusta estar sola");
+                    acierto = true;
+                } else{
+                    alert ("Lo siento, no has acertado 😔 \n Llevas " + intentos + " intentos.");
+                }
+
+                if (intentos == 5){
+                    alert ("Has perdido");
+                    let 
+                }
+                
+            }
+            break;
+
+            default:
+            alert ("EL NIVEL ES INVALIDO");
+        }
+    }
+
+</script>
+</body>
+</html>
